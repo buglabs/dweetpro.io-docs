@@ -99,7 +99,7 @@ Congratulations!  You have now sent your first couple of dweets.  Please review 
 
 ## Key Concepts
 
-In contrast to our our original API set (now known as our Public APIs), data and assets using the Pro APIs benefit from expanded security and access control.  As such, you will need to include a [token](#token) in the header of every Pro API request.  We created two types of tokens - the [Thing Token](#thing-token) and [Master Token](master-token) - with different access control capabilities.  Depending on the type of token provided in the request, API access may be further limited by the role of the [user-role](user-role) - Admin, Member, or Viewer - that is making the request.
+In contrast to our our original API set (now known as our Public APIs), data and assets using the Pro APIs benefit from expanded security and access control.  As such, you will need to include a [token](#token) in the header of every Pro API request.  We created two types of tokens - the [Thing Token](#thing-token) and [Master Token](#master-token) - with different access control capabilities.  Depending on the type of token provided in the request, API access may be further limited by the role of the user - Admin, Manager, or Viewer - that is making the request.
 
 
 ### Pro APIs
