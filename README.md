@@ -166,4 +166,12 @@ When a Thing Token is provided in the request header, the Lock’s Read Key can 
 ### Collection
 A Collection is a group of locked Things, used for organizational purposes.  When locking/provisioning a Thing, it must be added to a Collection.  Unlocked/unprovisioned things are held in a special Collection called “UNPROVISIONED”.
 
+### Notes
+DweetPro APIs maintain a common RESTful API structure, using the standard HTTP protocol.  
+
+The headers of an HTTP request are set separately from the URL of the request.  
+
+Standard notation for APIs are to show the relative path to the server, eliminating redundancy in documentation.  So, when you see an API displayed as "/v2/login", the full URL is actually "http://dweetpro.io/v2/login".  
+
+The current HTTP protocol does not allow you to set the headers within the URL, only parameters.  When typing in a URL into a browser, the browser makes an HTTP GET request to the URL, with parameters if they are supplied (e.g. the "?param1=val&param2=val" part of the URL).  Browsers can only make POST requests by using a plugin, like POSTman for Chrome.  Again, this is commonplace across all APIs you might encounter.  You can consult any resource online for tutorials on the HTTP protocol and making HTTP POST requests from the client of your choice.  Most programming languages provide easy ways to set the headers, and the body of an HTTP POST request.  
 
