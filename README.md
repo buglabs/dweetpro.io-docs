@@ -166,6 +166,12 @@ When a Thing Token is provided in the request header, the Lock’s Read Key can 
 ### Collection
 A Collection is a group of locked Things, used for organizational purposes.  When locking/provisioning a Thing, it must be added to a Collection.  Unlocked/unprovisioned things are held in a special Collection called “UNPROVISIONED”.
 
+Creating a new thing inside of a specific Collection will auto-assign that new thing an Unused Lock.
+You can unlock a Thing, or Move a Thing from one Collection to another.
+
+### Labels
+Labels are a way to group Things in multiple ways, outside of any Collection restriction. You can use the GET /V2/things/label to see all Things with a certian label.
+
 ### Notes
 DweetPro APIs maintain a common RESTful API structure, using the standard HTTP protocol.  
 
